@@ -1,0 +1,18 @@
+public class Box extends Rectangle{
+    private double z;
+    Box(double x,double y, double z){
+        super(x,y);
+        this.z=z;
+        System.out.println("Parameterized");
+    }
+    public double getVolume(){
+        return getArea()*z;
+    }
+    public void showDetails(){
+        System.out.println("X:"+x);
+        System.out.println("Y:"+getY());
+        System.out.println("Z:"+z);
+        System.out.println("Volume:"+getVolume());
+        System.out.println("Area:"+getArea());
+    }
+}
